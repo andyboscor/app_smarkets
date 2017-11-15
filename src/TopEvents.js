@@ -8,9 +8,7 @@ import { connect } from 'react-redux';
 import getTopEvents from './actions/request';
 
 class TopEvents extends Component {
-  constructor(props) {
-      super(props);
-    }
+
   render() {
     //sending event id's through react-router
     return (

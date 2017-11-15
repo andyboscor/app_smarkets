@@ -22,6 +22,6 @@ ReactDOM.render(
         <Route path="/events/top" component={TopEvents}/>
         <Route path="/events/:eventID" component={EventComponent}/>
       </Switch>
-  </Router>
+    </Router>
    </Provider>), document.getElementById('root'));
 registerServiceWorker();

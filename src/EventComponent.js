@@ -19,7 +19,7 @@ async getEventInfo(){
 
     let json = await res.json();
 
-    console.log(json);
+    //console.log(json);
     this.setState({event_info:json.event});
   }
   catch (e) {
@@ -29,7 +29,6 @@ async getEventInfo(){
 }
 //removing T and Z characters from time
 formatTime(date_time){
-  console.log(typeof date_time);
   if(date_time != null)
   {
     date_time = date_time.replace('T',' ');
