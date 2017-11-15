@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.event-list{
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    width:100%;
+    min-height:100%;
+    background: linear-gradient(to right,#c06c84, #80A0F9);
+
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content:flex-start;
+}
+.page-title{
+  width:60%;
+  text-align: center;
+  font-size: 30px;
+  color:white;
+}
+.event{
+
+   width:60%;
+   margin-bottom: 20px;
+   padding-bottom: 10px;
+   background: rgba(255,255,255,0.7);
+   display:flex;
+
+}
+.event-name{
+  margin-left: 20px;
+  font-size:20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.parent-name , .start-time{
+  margin-left: 20px;
+  min-width:100%;
+  font-size:16px;
+  text-transform: uppercase;
+}
+.parent-name > p {
+  margin:10px 0px 0px 0px;
+}
+.event-name > p {
+  margin:20px 0px 10px 0px;
+}
+.event > .parent-name{
+  margin-bottom:10px;
+}
+.separator-line{
+  background:linear-gradient(to right,#c06c84, #80A0F9);
+  height:2px;
+  width:100%;
+  margin-left:20px;
+}
+.arrow-right {
+  margin-left: auto;
+  margin-right:5%;
+  text-decoration: none !important;
+  color:black;
+}
+.event-info-container{
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to right,#c06c84, #80A0F9);
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.event-info{
+   width:60%;
+
+   background: rgba(255,255,255,0.7);
+   display:flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-content:flex-start;
+
+}
+.event-info > .event-name{
+  font-size:24px;
+}
+.event-info > .separator-line{
+  margin-left:0px;
+}
+.arrow-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-decoration: none !important;
+  color:white;
+}
+.event-info > .start-time , .parent-name{
+  width:60%;
+  margin-left:5%;
+  padding-top:10px;
+  display:inline-flex;
+}
+.categ-identifier{
+  text-transform: capitalize;
+  margin-right:10px !important;
+  font-weight:bold;
+}
+.refresh{
+  position:fixed;
+  right:10%;
+  top:20px;
+  color:white;
+}
