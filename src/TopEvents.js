@@ -12,7 +12,7 @@ class TopEvents extends Component {
       super(props);
     }
   render() {
-    console.log(this.props.events);
+    //sending event id's through react-router
     return (
       <div className="event-list">
         <div className="page-title">
@@ -42,7 +42,7 @@ const mapStateToProps = (state, ownProps) => {
   }
 };
 
-
+//used for manual refresh button
 const mapDispatchToProps = (dispatch) => {
   return {
     updateResults: () => dispatch(getTopEvents())

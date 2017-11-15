@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-
+//Using async function for API to avoid rerender if state not changed
 export default function getTopEvents(){
     return (dispatch) => {
     dispatch(fetchPostsRequest());

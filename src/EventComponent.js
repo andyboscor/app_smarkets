@@ -12,7 +12,7 @@ class EventComponent extends Component {
       event_info:{}
       }
     }
-//fetch request to get information
+//fetch request to get event information
 async getEventInfo(){
   try{
     let res = await fetch(`https://cors-anywhere.herokuapp.com/https://fe-api.smarkets.com/v0/events/id/${this.props.match.params.eventID}`);
@@ -27,6 +27,7 @@ async getEventInfo(){
 
   }
 }
+//removing T and Z characters from time
 formatTime(date_time){
   console.log(typeof date_time);
   if(date_time != null)
@@ -36,6 +37,8 @@ formatTime(date_time){
   }
   return date_time;
 }
+//Fetch request every time component renders
+//ID is passed through react-router
 componentDidMount(){
   this.getEventInfo();
 }
